@@ -1,0 +1,39 @@
+{"xref": {
+  "whenMade": 1438070390817,
+  "createdBy": "JBehave",
+  "metaFilter": "-skip +Delta -ignore",
+  "meta": [
+    "Delta=",
+    "invalidRegistration=",
+    "addToCartAndRemoveFromCart="
+  ],
+  "stories": [
+    {
+      "description": "",
+      "narrative": "In order to test the add to cart and remove from cart functionality\u000aAs a tester\u000aI want to be able to access its home page, add pass to cart and remove pass from the cart\u000a",
+      "name": "verifyAddToCartAndRemoveFromCart.story",
+      "path": "Stories/Order/verifyAddToCartAndRemoveFromCart.story",
+      "html": "Stories.Order.verifyAddToCartAndRemoveFromCart.html",
+      "meta": "Delta=\u000aaddToCartAndRemoveFromCart=\u000a",
+      "scenarios": "Scenario:verify the user is able to add and remove a pass to and from the cart\u000aGiven the user is in homepage\u000aThen the user waits for '2' seconds\u000aWhen the user clicks on travelling with us\u000aAnd the user clicks on delta sky club\u000aAnd the user clicks on One day pass\u000aAnd the user selects option\u000aAnd the user enter <'quantity'>,<'address'>,<'city'>, <'zip'>\u000aAnd the user selects location and state\u000aAnd the user clicks on add to cart\u000aThen the user waits for '5' seconds\u000aThen the pass should be added to cart\u000aWhen the user clicks on cart symbol\u000aAnd the user clicks on remove button\u000aThen the pass should be removed from the cart\u000a\u000a\u000a",
+      "passed": true,
+      "pending": false,
+      "started": 1438069771938,
+      "duration": 376375
+    },
+    {
+      "description": "",
+      "narrative": "In order to test the registration functionality\u000aAs a tester\u000aI want to be able to create an account with the application\u000a",
+      "name": "verifyInvalidRegistration.story",
+      "path": "Stories/Profile/verifyInvalidRegistration.story",
+      "html": "Stories.Profile.verifyInvalidRegistration.html",
+      "meta": "Delta=\u000ainvalidRegistration=\u000a",
+      "scenarios": "Scenario:verify the user is able to register\u000aGiven the user is in homepage\u000aThen the user waits for '2' seconds\u000aWhen the user clicks on skymiles\u000aAnd the user clicks on join sky miles\u000aAnd the user enters <'firstName'>,<'lastName'>\u000aAnd the user selects dob and gender\u000aAnd the user clicks on complete button\u000aThen the welcome page should appear\u000a\u000a\u000a",
+      "passed": false,
+      "pending": false,
+      "started": 1438070149353,
+      "duration": 209084
+    }
+  ],
+  "stepMatches": []
+}}

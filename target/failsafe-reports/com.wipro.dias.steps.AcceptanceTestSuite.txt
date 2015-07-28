@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.wipro.dias.steps.AcceptanceTestSuite
+-------------------------------------------------------------------------------
+Tests run: 26, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 623.736 sec <<< FAILURE! - in com.wipro.dias.steps.AcceptanceTestSuite
+Then the welcome page should appear(com.wipro.dias.steps.HomeSteps)  Time elapsed: 2.691 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at com.wipro.dias.steps.HomeSteps.userShuoldSeeWelcomeScreen(HomeSteps.java:207)
+

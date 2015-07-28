@@ -1,0 +1,5 @@
+#org.jbehave.core.embedder.StoryManager
+#Tue Jul 28 13:29:20 IST 2015
+Stories/Order/verifyAddToCartAndRemoveFromCart.story=377000
+total=587000
+Stories/Profile/verifyInvalidRegistration.story=210000

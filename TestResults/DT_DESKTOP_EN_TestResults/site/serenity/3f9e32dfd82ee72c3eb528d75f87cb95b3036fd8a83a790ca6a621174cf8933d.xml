@@ -1,0 +1,116 @@
+<acceptance-test-run title="verify the user is able to add and remove a pass to and from the cart" name="verify the user is able to add and remove a pass to and from the cart" steps="14" successful="14" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="374829" timestamp="2015-07-28T13:19:32.491+05:30">
+  <user-story id="verifyAddToCartAndRemoveFromCart" name="Verify add to cart and remove from cart" path="Stories/Order/verifyAddToCartAndRemoveFromCart.story"/>
+  <tags>
+    <tag name="Order/Verify add to cart and remove from cart" type="story"/>
+    <tag name="Verify add to cart and remove from cart" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>quantity</header>
+      <header>address</header>
+      <header>city</header>
+      <header>zip</header>
+      <header>firstName</header>
+      <header>lastName</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>50</value>
+        <value>20212 S</value>
+        <value>AZ</value>
+        <value>85282</value>
+        <value>Aparna</value>
+        <value>G</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {quantity=50, address=20212 S, city=AZ, zip=85282, firstName=Aparna, lastName=G}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="169571">
+      <screenshots>
+        <screenshot image="f145d1dc46cec380b1cc9287361c73cc_NONE.png"/>
+      </screenshots>
+      <description>Given the user is in homepage</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5430">
+      <screenshots>
+        <screenshot image="f145d1dc46cec380b1cc9287361c73cc_NONE.png"/>
+      </screenshots>
+      <description>Then the user waits for &apos;2&apos; seconds</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6086">
+      <screenshots>
+        <screenshot image="05997f745071daa8febf8d78713127d6_NONE.png"/>
+      </screenshots>
+      <description>When the user clicks on travelling with us</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="35725">
+      <screenshots>
+        <screenshot image="db2dc819d4178622935bd13044c5be89_NONE.png"/>
+      </screenshots>
+      <description>And the user clicks on delta sky club</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="28963">
+      <screenshots>
+        <screenshot image="a027c2502b74f95bf7e682204ceea06b_NONE.png"/>
+      </screenshots>
+      <description>And the user clicks on One day pass</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="21125">
+      <screenshots>
+        <screenshot image="ad4dc4e69741e1aced9434c3c07d1498_NONE.png"/>
+      </screenshots>
+      <description>And the user selects option</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="10755">
+      <screenshots>
+        <screenshot image="2cba815f080354945a9bb7e74770fa2d_NONE.png"/>
+      </screenshots>
+      <description>And the user enter &lt;&apos;quantity&apos;&gt;,&lt;&apos;address&apos;&gt;,&lt;&apos;city&apos;&gt;, &lt;&apos;zip&apos;&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4610">
+      <screenshots>
+        <screenshot image="cf962c7caf682dbe09f8b585ee86bc6f_NONE.png"/>
+      </screenshots>
+      <description>And the user selects location and state</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="29098">
+      <screenshots>
+        <screenshot image="30fb390bfaca19bf49ee0bcebd755ff1_NONE.png"/>
+      </screenshots>
+      <description>And the user clicks on add to cart</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6436">
+      <screenshots>
+        <screenshot image="30fb390bfaca19bf49ee0bcebd755ff1_NONE.png"/>
+      </screenshots>
+      <description>Then the user waits for &apos;5&apos; seconds</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2141">
+      <screenshots>
+        <screenshot image="30fb390bfaca19bf49ee0bcebd755ff1_NONE.png"/>
+      </screenshots>
+      <description>Then the pass should be added to cart</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="16802">
+      <screenshots>
+        <screenshot image="e3411a37d49083ff5e8a2d929823e228_NONE.png"/>
+      </screenshots>
+      <description>When the user clicks on cart symbol</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="36133">
+      <screenshots>
+        <screenshot image="f9906cacb8e3151cd761817f4df09f52_NONE.png"/>
+      </screenshots>
+      <description>And the user clicks on remove button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1235">
+      <screenshots>
+        <screenshot image="f9906cacb8e3151cd761817f4df09f52_NONE.png"/>
+      </screenshots>
+      <description>Then the pass should be removed from the cart</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

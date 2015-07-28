@@ -1,0 +1,83 @@
+<acceptance-test-run title="verify the user is able to register" name="verify the user is able to register" steps="8" successful="7" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="208941" timestamp="2015-07-28T13:25:49.373+05:30">
+  <user-story id="verifyInvalidRegistration" name="Verify invalid registration" path="Stories/Profile/verifyInvalidRegistration.story"/>
+  <tags>
+    <tag name="Profile/Verify invalid registration" type="story"/>
+    <tag name="Verify invalid registration" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>quantity</header>
+      <header>address</header>
+      <header>city</header>
+      <header>zip</header>
+      <header>firstName</header>
+      <header>lastName</header>
+    </headers>
+    <rows>
+      <row result="FAILURE">
+        <value>50</value>
+        <value>20212 S</value>
+        <value>AZ</value>
+        <value>85282</value>
+        <value>Aparna</value>
+        <value>G</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {quantity=50, address=20212 S, city=AZ, zip=85282, firstName=Aparna, lastName=G}" result="FAILURE">
+    <test-step result="SUCCESS" duration="89801">
+      <screenshots>
+        <screenshot image="e3f4b9a27a24cf78d3f218aaed3770c8_NONE.png"/>
+      </screenshots>
+      <description>Given the user is in homepage</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6727">
+      <screenshots>
+        <screenshot image="e3f4b9a27a24cf78d3f218aaed3770c8_NONE.png"/>
+      </screenshots>
+      <description>Then the user waits for &apos;2&apos; seconds</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="11026">
+      <screenshots>
+        <screenshot image="6bab84eb57e2e7e6170b748602246749_NONE.png"/>
+      </screenshots>
+      <description>When the user clicks on skymiles</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="36704">
+      <screenshots>
+        <screenshot image="b228fd5a17d17956556b95cb606ae514_NONE.png"/>
+      </screenshots>
+      <description>And the user clicks on join sky miles</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="46604">
+      <screenshots>
+        <screenshot image="ebf322590bdb3047c771c0540a2a525b_NONE.png"/>
+      </screenshots>
+      <description>And the user enters &lt;&apos;firstName&apos;&gt;,&lt;&apos;lastName&apos;&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="9198">
+      <screenshots>
+        <screenshot image="aa550e0a2cb9e89109f61e7efb450872_NONE.png"/>
+      </screenshots>
+      <description>And the user selects dob and gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="5842">
+      <screenshots>
+        <screenshot image="d05a354e2db0b6dcdf8452a9405374fe_NONE.png"/>
+      </screenshots>
+      <description>And the user clicks on complete button</description>
+    </test-step>
+    <test-step result="FAILURE" duration="2681">
+      <screenshots>
+        <screenshot image="d05a354e2db0b6dcdf8452a9405374fe_NONE.png"/>
+      </screenshots>
+      <description>Then the welcome page should appear</description>
+      <error>Unspecified failure</error>
+      <exception>java.lang.AssertionError:null&#xd;
+[com.wipro.dias.steps.HomeSteps.userShuoldSeeWelcomeScreen(HomeSteps.java:207)]</exception>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

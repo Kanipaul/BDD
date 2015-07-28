@@ -1,0 +1,54 @@
+<div class="story">
+<h1></h1>
+<div class="path">Stories/Profile/verifyInvalidRegistration.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@Delta </div>
+<div class="property">@invalidRegistration </div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> test the registration functionality</div>
+<div class="element asA"><span class="keyword asA">As a</span> tester</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> be able to create an account with the application</div>
+</div>
+<div class="scenario">
+<h2>Scenario: verify the user is able to register</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the user is in homepage</div>
+<div class="step">Then the user waits for '2' seconds</div>
+<div class="step">When the user clicks on skymiles</div>
+<div class="step">And the user clicks on join sky miles</div>
+<div class="step">And the user enters &lt;'firstName'&gt;,&lt;'lastName'&gt;</div>
+<div class="step">And the user selects dob and gender</div>
+<div class="step">And the user clicks on complete button</div>
+<div class="step">Then the welcome page should appear</div>
+<table>
+<thead>
+<tr>
+<th>quantity</th><th>address</th><th>city</th><th>zip</th><th>firstName</th><th>lastName</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>50</td><td>20212 S</td><td>AZ</td><td>85282</td><td>Aparna</td><td>G</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {quantity=50, address=20212 S, city=AZ, zip=85282, firstName=Aparna, lastName=G}</h3>
+<div class="step successful">Given the user is in homepage</div>
+<div class="step successful">Then the user waits for '2' seconds</div>
+<div class="step successful">When the user clicks on skymiles</div>
+<div class="step successful">And the user clicks on join sky miles</div>
+<div class="step successful">And the user enters &lt;'firstName'&gt;,&lt;'lastName'&gt;</div>
+<div class="step successful">And the user selects dob and gender</div>
+<div class="step successful">And the user clicks on complete button</div>
+<div class="step failed">Then the welcome page should appear <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+</div>
+<pre class="failure">java.lang.AssertionError
+	at com.wipro.dias.steps.HomeSteps.userShuoldSeeWelcomeScreen(HomeSteps.java:207)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:535)
+...</pre>
+</div>
+</div>

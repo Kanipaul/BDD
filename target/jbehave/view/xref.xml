@@ -1,0 +1,77 @@
+<xref>
+  <whenMade>1438070390817</whenMade>
+  <createdBy>JBehave</createdBy>
+  <metaFilter>-skip +Delta -ignore</metaFilter>
+  <meta>
+    <string>Delta=</string>
+    <string>invalidRegistration=</string>
+    <string>addToCartAndRemoveFromCart=</string>
+  </meta>
+  <stories>
+    <story>
+      <description></description>
+      <narrative>In order to test the add to cart and remove from cart functionality
+As a tester
+I want to be able to access its home page, add pass to cart and remove pass from the cart
+</narrative>
+      <name>verifyAddToCartAndRemoveFromCart.story</name>
+      <path>Stories/Order/verifyAddToCartAndRemoveFromCart.story</path>
+      <html>Stories.Order.verifyAddToCartAndRemoveFromCart.html</html>
+      <meta>Delta=
+addToCartAndRemoveFromCart=
+</meta>
+      <scenarios>Scenario:verify the user is able to add and remove a pass to and from the cart
+Given the user is in homepage
+Then the user waits for &apos;2&apos; seconds
+When the user clicks on travelling with us
+And the user clicks on delta sky club
+And the user clicks on One day pass
+And the user selects option
+And the user enter &lt;&apos;quantity&apos;&gt;,&lt;&apos;address&apos;&gt;,&lt;&apos;city&apos;&gt;, &lt;&apos;zip&apos;&gt;
+And the user selects location and state
+And the user clicks on add to cart
+Then the user waits for &apos;5&apos; seconds
+Then the pass should be added to cart
+When the user clicks on cart symbol
+And the user clicks on remove button
+Then the pass should be removed from the cart
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1438069771938</started>
+      <duration>376375</duration>
+    </story>
+    <story>
+      <description></description>
+      <narrative>In order to test the registration functionality
+As a tester
+I want to be able to create an account with the application
+</narrative>
+      <name>verifyInvalidRegistration.story</name>
+      <path>Stories/Profile/verifyInvalidRegistration.story</path>
+      <html>Stories.Profile.verifyInvalidRegistration.html</html>
+      <meta>Delta=
+invalidRegistration=
+</meta>
+      <scenarios>Scenario:verify the user is able to register
+Given the user is in homepage
+Then the user waits for &apos;2&apos; seconds
+When the user clicks on skymiles
+And the user clicks on join sky miles
+And the user enters &lt;&apos;firstName&apos;&gt;,&lt;&apos;lastName&apos;&gt;
+And the user selects dob and gender
+And the user clicks on complete button
+Then the welcome page should appear
+
+
+</scenarios>
+      <passed>false</passed>
+      <pending>false</pending>
+      <started>1438070149353</started>
+      <duration>209084</duration>
+    </story>
+  </stories>
+  <stepMatches/>
+</xref>

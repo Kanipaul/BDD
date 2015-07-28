@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Stories.Order.verifyAddToCartAndRemoveFromCart</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="Stories/Order/verifyAddToCartAndRemoveFromCart.story" title="">
+<meta>
+<property keyword="@" name="Delta" value=""/>
+<property keyword="@" name="addToCartAndRemoveFromCart" value=""/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">test the add to cart and remove from cart functionality</inOrderTo>
+  <asA keyword="As a">tester</asA>
+  <iWantTo keyword="I want to">be able to access its home page, add pass to cart and remove pass from the cart</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="verify the user is able to add and remove a pass to and from the cart">
+<examples keyword="Examples:">
+<step>Given the user is in homepage</step>
+<step>Then the user waits for &apos;2&apos; seconds</step>
+<step>When the user clicks on travelling with us</step>
+<step>And the user clicks on delta sky club</step>
+<step>And the user clicks on One day pass</step>
+<step>And the user selects option</step>
+<step>And the user enter &lt;&apos;quantity&apos;&gt;,&lt;&apos;address&apos;&gt;,&lt;&apos;city&apos;&gt;, &lt;&apos;zip&apos;&gt;</step>
+<step>And the user selects location and state</step>
+<step>And the user clicks on add to cart</step>
+<step>Then the user waits for &apos;5&apos; seconds</step>
+<step>Then the pass should be added to cart</step>
+<step>When the user clicks on cart symbol</step>
+<step>And the user clicks on remove button</step>
+<step>Then the pass should be removed from the cart</step>
+<parameters>
+<names><name>quantity</name><name>address</name><name>city</name><name>zip</name><name>firstName</name><name>lastName</name></names>
+<values><value>50</value><value>20212 S</value><value>AZ</value><value>85282</value><value>Aparna</value><value>G</value></values>
+</parameters>
+
+<example keyword="Example:">{quantity=50, address=20212 S, city=AZ, zip=85282, firstName=Aparna, lastName=G}</example>
+<step outcome="successful">Given the user is in homepage</step>
+<step outcome="successful">Then the user waits for &apos;2&apos; seconds</step>
+<step outcome="successful">When the user clicks on travelling with us</step>
+<step outcome="successful">And the user clicks on delta sky club</step>
+<step outcome="successful">And the user clicks on One day pass</step>
+<step outcome="successful">And the user selects option</step>
+<step outcome="successful">And the user enter &lt;&apos;quantity&apos;&gt;,&lt;&apos;address&apos;&gt;,&lt;&apos;city&apos;&gt;, &lt;&apos;zip&apos;&gt;</step>
+<step outcome="successful">And the user selects location and state</step>
+<step outcome="successful">And the user clicks on add to cart</step>
+<step outcome="successful">Then the user waits for &apos;5&apos; seconds</step>
+<step outcome="successful">Then the pass should be added to cart</step>
+<step outcome="successful">When the user clicks on cart symbol</step>
+<step outcome="successful">And the user clicks on remove button</step>
+<step outcome="successful">Then the pass should be removed from the cart</step>
+</examples>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

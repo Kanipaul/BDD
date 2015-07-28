@@ -1,0 +1,7 @@
+ {ignorableSeparator=!--,headerSeparator=|,valueSeparator=|,transformer=FROM_LANDSCAPE}
+ | quantity | 50 |
+ | address | 20212 S |
+ | city | AZ |
+ | zip | 85282  |
+ |firstName| Aparna|
+ |lastName| G|

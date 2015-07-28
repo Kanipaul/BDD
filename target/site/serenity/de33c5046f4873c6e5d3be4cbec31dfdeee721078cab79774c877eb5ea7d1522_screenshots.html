@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+    var screenshotIndex = getUrlVars()["screenshot"];
+
+	$(window).load(function() {
+	    $('#slider').nivoSlider({
+            startSlide:screenshotIndex,
+            effect:'fade',
+			animSpeed:200
+		});
+	});
+	</script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="bluetext">
+                <a href="index.html" class="bluetext">Home</a>
+                > <a href="fbbdcf786d7553a68120b0424bc446a607cd8148190a543fed45646f0a0bca0b.html">Verify Invalid Registration</a>
+                > <a href="de33c5046f4873c6e5d3be4cbec31dfdeee721078cab79774c877eb5ea7d1522.html">verify the user is able to register </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+    </ul>
+    <span class="date-and-time">Report generated 28-07-2015 13:29</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+    <!--
+    <div id="contentbody">
+        <div class="titlebar">
+        <div class="story-title">
+            <table width="1005">
+                <td width="50"><img class="story-outcome-icon" src="images/fail.png" width="25" height="25"/> </td>
+                <td width="%"><span class="test-case-title"><span
+                        class="failing-color">verify the user is able to register<span class="related-issue-title"></span></span></span>
+                </td>
+                <td width="100"><span class="test-case-duration"><span class="greentext">208.94s</span></span>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+-->
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><img class="story-outcome-icon" src="images/fail.png" /></span>
+                            <span class="test-case-caption">Test Outcome</span>
+                            <span class="test-case-title">
+                                <span class="failing-color">verify the user is able to register
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="story-header">Story: Verify Invalid Registration</h3>
+
+                                <div class="requirementNarrativeTitle">
+                                In order to test the registration functionality<br>As a tester<br>I want to be able to create an account with the application
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+        <div class="story-title">
+            <h3>Scenario:</h3>
+            <div class="scenario">Given the user is in homepage<br>Then the user waits for '2' seconds<br>When the user clicks on skymiles<br>And the user clicks on join sky miles<br>And the user enters <'firstName'>,<'lastName'><br>And the user selects dob and gender<br>And the user clicks on complete button<br>Then the welcome page should appear</div>
+
+        </div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+
+	 <div class="slider-wrapper theme-default">
+		<div id="slider">
+                <img src="e3f4b9a27a24cf78d3f218aaed3770c8_NONE.png" alt="" title="Given the user is in homepage" width="1070"/>
+                <img src="e3f4b9a27a24cf78d3f218aaed3770c8_NONE.png" alt="" title="Then the user waits for '2' seconds" width="1070"/>
+                <img src="6bab84eb57e2e7e6170b748602246749_NONE.png" alt="" title="When the user clicks on skymiles" width="1070"/>
+                <img src="b228fd5a17d17956556b95cb606ae514_NONE.png" alt="" title="And the user clicks on join sky miles" width="1007"/>
+                <img src="ebf322590bdb3047c771c0540a2a525b_NONE.png" alt="" title="And the user enters &lt;'firstName'&gt;,&lt;'lastName'&gt;" width="1007"/>
+                <img src="aa550e0a2cb9e89109f61e7efb450872_NONE.png" alt="" title="And the user selects dob and gender" width="1007"/>
+                <img src="d05a354e2db0b6dcdf8452a9405374fe_NONE.png" alt="" title="And the user clicks on complete button" width="1007"/>
+                <img src="d05a354e2db0b6dcdf8452a9405374fe_NONE.png" alt="" title="Then the welcome page should appear" width="1007"/>
+        </div>
+	  </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.0.24</span>
+</div>
+</body>
+</html>

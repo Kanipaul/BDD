@@ -1,0 +1,43 @@
+<story path="Stories/Profile/verifyInvalidRegistration.story" title="">
+<meta>
+<property keyword="@" name="Delta" value=""/>
+<property keyword="@" name="invalidRegistration" value=""/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">test the registration functionality</inOrderTo>
+  <asA keyword="As a">tester</asA>
+  <iWantTo keyword="I want to">be able to create an account with the application</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="verify the user is able to register">
+<examples keyword="Examples:">
+<step>Given the user is in homepage</step>
+<step>Then the user waits for &apos;2&apos; seconds</step>
+<step>When the user clicks on skymiles</step>
+<step>And the user clicks on join sky miles</step>
+<step>And the user enters &lt;&apos;firstName&apos;&gt;,&lt;&apos;lastName&apos;&gt;</step>
+<step>And the user selects dob and gender</step>
+<step>And the user clicks on complete button</step>
+<step>Then the welcome page should appear</step>
+<parameters>
+<names><name>quantity</name><name>address</name><name>city</name><name>zip</name><name>firstName</name><name>lastName</name></names>
+<values><value>50</value><value>20212 S</value><value>AZ</value><value>85282</value><value>Aparna</value><value>G</value></values>
+</parameters>
+
+<example keyword="Example:">{quantity=50, address=20212 S, city=AZ, zip=85282, firstName=Aparna, lastName=G}</example>
+<step outcome="successful">Given the user is in homepage</step>
+<step outcome="successful">Then the user waits for &apos;2&apos; seconds</step>
+<step outcome="successful">When the user clicks on skymiles</step>
+<step outcome="successful">And the user clicks on join sky miles</step>
+<step outcome="successful">And the user enters &lt;&apos;firstName&apos;&gt;,&lt;&apos;lastName&apos;&gt;</step>
+<step outcome="successful">And the user selects dob and gender</step>
+<step outcome="successful">And the user clicks on complete button</step>
+<step outcome="failed" keyword="FAILED">Then the welcome page should appear<failure>java.lang.AssertionError</failure></step>
+</examples>
+<failure>java.lang.AssertionError
+	at com.wipro.dias.steps.HomeSteps.userShuoldSeeWelcomeScreen(HomeSteps.java:207)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:535)
+...</failure>
+</scenario>
+</story>
